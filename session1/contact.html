@@ -6,15 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form method="post" autocomplete="off" action="about.html">
         <label>First Name : </label>
-        <input type="text" name="firstName"  autofocus>
+        <input type="text" autocomplete="off" name="firstName" minlength="3" maxlength="8" autofocus required>
         <br>
         <label for="lastName">Last Name :</label>
         <input name="lastName" id="lastName">
         <br>
         <input type="email" name="userEmail" placeholder="enter your email">
         <br>
+        <input type="password" placeholder="password" 
+        title="please enter at least 1 number , 1 uppercase letter , 1 lowercase letter"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <br>
+
         <input type="number" placeholder="age">
         <!-- <input type="text" value="Alex" name="shippingArea" disabled > -->
         <input type="text" value="Alex" name="shippingArea" readonly >
@@ -36,11 +41,37 @@
         <textarea placeholder="enter your address" rows="5" cols="50"></textarea>
         <br>
 
+        <input type="range" name="range" min="100" value="150" max="300" >
 
+        <br>
+
+        <!-- <label>Choose course</label> -->
+        <select name="course" multiple>
+            <option disabled selected>Choose Course</option>
+            <option>Html</option>
+            <option>Css</option>
+            <option>JS</option>
+            <option>Bootstrap</option>
+        </select>
+
+
+        <br>
+
+        <input type="file" multiple>
+        <br>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <br>
+        <input type="color">
+        <br>
+        <input type="url">
         <input type="submit" value="Login">
         <input type="reset">
         <button>Register</button>
         <button type="reset">Clear</button>
+
+        <!-- datalist ==> search -->
 
         
     </form>

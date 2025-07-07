@@ -1,0 +1,11 @@
+-- css ==> internal sheet
+           inline style
+           external sheet
+
+
+-- elements ==> block 
+                inline ==> (inline , inline-block)     
+
+
+
+ -- display ==> block , inline , inline-block , flex                     
