@@ -1,0 +1,130 @@
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/* Global Style */
+.container {
+    /* background-color: blue; */
+    width: 80%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: rgb(230, 230, 230);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-top-bottom {
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-left-right {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.overlay {
+    background-color: #00000087;
+    /* background-color: rgba(0, 0, 0, 0.621); */
+    height: 100%;
+    padding: 6% 0%;
+}
+
+.btn-transparent {
+    margin-top: 2%;
+    padding: 1%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+
+/* Custom Style */
+nav{
+    padding: 1% 0%;
+}
+nav ul {
+    width: 19%;
+}
+nav li{
+     margin-left: 4%;
+}
+
+.banner {
+    background-image: url(../images/istockphoto-517188688-1024x1024.jpg);
+    /* height: 700px; */
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-position-x: center;
+    background-position-y: center;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+}
+
+.card {
+    background-color: white;
+    display: inline-block;
+    width: 32%;
+    /* box-shadow: offset-x offset-y blur spread color; */
+    box-shadow: 0px 0px 7px 3px rgb(111 108 108);
+    padding: 2%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 3%;
+}
+
+.custom-margin {
+    margin-bottom: 3%;
+}
+
+hr {
+    width: 6%;
+    margin: 2% auto;
+    border: 3px solid;
+}
