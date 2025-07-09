@@ -59,6 +59,9 @@ ul{
 .text-white {
     color: white;
 }
+.d-inline-block{
+    display: inline-block;
+}
 
 .overlay {
     background-color: #00000087;
@@ -75,9 +78,6 @@ ul{
     border: 2px solid;
 }
 
-.d-inline-block{
-    display: inline-block;
-}
 
 
 /* Custom Style */

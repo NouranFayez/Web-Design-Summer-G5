@@ -1,0 +1,131 @@
+/* Reset Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: lightgray;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.bg-gold {
+    background-color: goldenrod;
+}
+
+.text-white {
+    color: white;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.float-right {
+    float: right;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+
+
+/* position ==> static(default) , fixed , sticky , relative , absolute */
+/* top , left , bottom , right , z-index */
+
+/* custom style */
+header {
+    padding: 2%;
+}
+
+nav {
+    padding: 1% 0%;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+nav ul {
+    width: 32%;
+}
+
+nav li {
+    margin-left: 4%;
+}
+
+.custom-section-style {
+    height: 600px;
+    padding: 5% 0;
+}
+
+.card {
+    background-color: white;
+    /* padding: 2%; */
+    width: 50%;
+    position: relative;
+
+
+}
+
+.card-body {
+    padding: 2%;
+    position: absolute;
+    bottom: 9%;
+    width: 80%;
+    left: 10%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.up-icon {
+    color: white;
+    background-color: black;
+    padding: 1%;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 30px;
+    /* /* line-height: 2; */
+}
+
+.github-icon{
+    font-size: 45px;
+    margin: 4%;
+    color: teal;
+    border: 2px solid;
+    padding: 2%;
+    border-radius: 50%;
+}
