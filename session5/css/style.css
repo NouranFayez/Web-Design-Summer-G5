@@ -1,0 +1,191 @@
+/* reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* global style */
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: rgb(228, 227, 227);
+}
+
+.padding-top-bottom {
+    padding: 3% 0%;
+}
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.flex-container {
+    display: flex;
+    /*justify-content ==>  flex-start (default) , flex-end , center , space-between , space-around , spcae-evenly */
+    justify-content: space-between;
+    /* nowrap(default) , wrap */
+    flex-wrap: wrap;
+    /* align-items: stretch (default) , flex-start , flex-end , center; */
+    align-items: center;
+    height: 514px;
+    background: black;
+    /* align-content ==> flex-start , flex-end , center , space-between ,  space-around , space-evenly*/
+    align-content: space-between;
+    /* flex-direction ==> row (default) , row-reverse , column , column-reverse */
+
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.order-1 {
+    order: -1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+
+
+/* custom style */
+nav {
+    padding: 1% 0;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    background: antiquewhite;
+
+}
+
+#services-section .card {
+
+    background-color: white;
+    box-shadow: 0px 0px 6px rgb(180, 180, 180);
+    padding: 1%;
+}
+
+
+#blogs-section .card {
+
+    background-color: white;
+}
+
+.tag-box {
+    padding: 3%;
+}
+
+.tag-box p {
+    margin-right: 4%;
+}
+
+.card img {
+
+    display: block;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.614);
+    height: 100%;
+    top: 0;
+    align-items: flex-end;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    display: none;
+    /* opacity: 0; */
+     /* visibility: hidden; */
+
+}
+.card:hover .overlay{
+    /* opacity: 1; */
+   /* visibility: visible; */
+    display: flex; 
+}
+
+.overlay a {
+    color: white;
+
+}
+
+.card-body {
+    padding: 13% 3% 5%;
+}
+
+.card-position-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 74%;
+    right: 5%;
+    border: 6px solid white;
+}
+
+.card-body h2:hover {
+    color: blue;
+}
+
+.card-body a {
+    background-color: teal;
+    color: white;
+    padding: 2% 3%;
+    display: inline-block;
+    margin-top: 3%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.card-body a:hover{
+    background-color: goldenrod;
+}
+
+
+
+/* landing page ==> https://www.figma.com/design/Beo19U1TQgMrPqQxWpEhfi/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=0-1&p=f&t=HSRPhBMf6qEmCQOq-0 */
