@@ -1,0 +1,71 @@
+/* 
+rule type condition
+
+type ==> all , screen , speetch , print
+condition ==> max-width , min-width 
+
+*/
+
+/* 398 */
+
+/* 0 : 991.98 */
+@media (max-width: 991.98px) {
+
+    .left-aside,
+    .right-aside {
+        width: 100%;
+    }
+
+    /* .d-flex{
+            flex-wrap: wrap;
+    } */
+    .left-aside {
+        background-color: goldenrod;
+    }
+
+}
+
+/* 0 : 575.98px */
+@media (max-width: 575.98px) {
+
+    .left-aside,
+    .right-aside {
+        width: 100%;
+    }
+
+    /* .d-flex{
+            flex-wrap: wrap;
+    } */
+    .w-45 {
+        width: 100%;
+    }
+
+    .left-aside {
+        background-color: lightgray;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .right-aside {
+        background-color: aqua;
+    }
+}
+
+
+@media (min-width:400px) and (max-width:800px) {
+    .card-lg {
+        background: black;
+        color: white;
+    }
+    .hidden-section{
+        display: none;
+    }
+}
+
+
+@media print{
+    .left-aside{
+        display: none;
+    }
+}
