@@ -1,0 +1,231 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* direction: rtl; */
+}
+
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* custom style */
+
+h3 {
+    /* text-align: right; */
+}
+
+.card-overflow {
+    width: 30%;
+    padding: 2%;
+    border: 2px solid;
+    position: relative;
+    /* overflow ==> auto , hidden , scroll */
+    overflow: hidden;
+    /* white-space:==> normail (default) , nowrap */
+
+}
+
+
+.card-position-absolute {
+    background-color: #eee;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    border: 2px solid;
+    transition: 1s;
+}
+
+.card-overflow:hover .card-position-absolute{
+    top: 0%;
+}
+
+
+.custom-link{
+    font-size: 40px;
+}
+
+/* pseudo class */
+a:link{
+    color: goldenrod;
+}
+a:visited{
+    color: cornflowerblue;
+}
+a:active{
+    color: black;
+}
+
+ul li:first-child{
+    color: red;
+    background-color: lightgray;
+}
+
+ul li:last-child{
+    color: blue;
+    background-color: lightgray;
+}
+ul li:nth-child(3){
+    color: green;
+    font-size: 20px;
+}
+.custom-div p:nth-child(2){
+    color: red;
+    font-size: 30px;
+}
+table{
+    width: 100%;
+}
+table , td , th {
+    border: 1px solid #bbbbbb;
+    border-collapse: collapse;
+}
+th{
+    background-color: cadetblue;
+    color: white;
+}
+th , td {
+    padding: 1% 2%;
+}
+/* num , even , odd */
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(even):hover{
+    background-color: black;
+    color: white;
+}
+tr:nth-child(odd):hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+
+input:disabled{
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+/* input:read-only{
+    border: 2px solid red;
+} */
+
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* pseudo element */
+
+.custom-input{
+    padding: 2%;
+    color: red;
+
+}
+.custom-input::placeholder{
+    /* color: teal; */
+}
+
+::placeholder{
+     color: teal;
+}
+
+::selection{
+    background-color: goldenrod;
+    color: white;
+}
+
+::marker{
+    color: chartreuse;
+}
+h2{
+    margin-top: 4%;
+}
+
+h2::first-letter{
+    color: blue;
+    font-size: 40px;
+}
+h2::first-line{
+    color: red;
+    font-size: 50px;
+    background-color: #eee;
+}
+
+h1::before{
+    content: "web design";
+    background-color: aqua;
+    padding: 2%;
+    display: inline-block;
+
+}
+
+/* h1::after{
+     content: "";
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: inline-block;
+} */
+
+h1::after{
+    font-family: 'Font Awesome 6 Free';
+  /* Set the weight for this icon style */
+  font-weight: 900;
+  content: "\f007";
+}
+.bg-light{
+    background-color: #eee;
+  
+}
+
+.card-transform{
+    width: 30%;
+    padding: 2%;
+    box-shadow: 0px 0px 6px 3px lightgray;
+    margin-top: 4%;
+    transition: 2s;
+    display: inline-block;
+
+
+}
+
+.card-transform:hover{
+    transform: translateX(100px);
+    transform: translateX(50%);
+    transform: translateX(-100%);
+    transform: translateY(100px);
+    transform: translateY(-50%);
+    transform: translate(100px , 50%);
+    transform: rotateX(180deg);
+    transform: rotateX(-180deg);
+    transform: rotateY(180deg);
+    transform: rotate(180deg);
+    transform: scaleX(1.5);
+    transform: scaleX(0.5);
+    transform: scaleX(0);
+    transform: scaleY(1.5);
+    transform: scaleY(0);
+    transform: scale(1.5);
+    transform: skewX(50deg);
+    transform: skewY(50deg);
+    /* matrix() ==> scaleX() , skewY() , skewX() , scaleY() , translaeX() , translateY() */
+    transform: matrix(1.5 , 0.5 , 0 , 1 , 200 , 300 );
+
+    transform: rotate(90deg) translateX(200px);
+ 
+
+}
+
+
+
+
+
+
