@@ -1,0 +1,25 @@
+.bg-img {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1200px-24701-nature-natural-beauty.jpg);
+
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #fdfeff;
+    background-color: #3061ac;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-indicators {
+    left: auto;
+    flex-direction: column;
+}
+
+.carousel-caption {
+    bottom: 15.25rem;
+}
