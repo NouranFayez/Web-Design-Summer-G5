@@ -1,0 +1,15 @@
+-- camel case
+
+-- data type ==> string , number , boolean (true / false) , undefined , null 
+
+
+-- operations ==> Mathematical operators (+ - / * ** % ++ --)
+                  Assignment Operator (+= , -= , *= , /= , %=)
+                  comparison operator (< > <= >= == === != !==)
+                  logical operator (&& || !)
+                  unary operator (typeof)
+                  ternary operator (condition/s) ? true condition : false condition
+
+
+
+// false value - truthy value
