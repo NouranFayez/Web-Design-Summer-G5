@@ -76,48 +76,48 @@ myForm.addEventListener('submit', (e) => {
         email: e.target.elements[1].value
     }
     users.push(user)
-    localStorage.setItem('users' , JSON.stringify(users))
+    localStorage.setItem('users', JSON.stringify(users))
     // console.table(users)
     drawElement()
 
 })
 // myForm.addEventListener('input')
 
-var editItem = (i)=>{
-     var p = prompt('enter new name')
-        users[i].name = p
+var editItem = (i) => {
+    var p = prompt('enter new name')
+    users[i].name = p
 
-        console.table(users)
+    console.table(users)
 
-        drawElement()
+    drawElement()
 }
 var drawElement = () => {
     container.innerText = ""
     console.log(users)
-    users.forEach((item , i)=>{
-    var div = document.createElement('div')
-    div.classList.add('alert' , 'alert-primary')
-    var h2 = document.createElement('h2')
-    h2.innerText = item.name
-    var editBtn = document.createElement('button')
-    editBtn.classList.add('btn' , 'btn-success')
-    editBtn.innerText="Edit Name"
+    users.forEach((item, i) => {
+        var div = document.createElement('div')
+        div.classList.add('alert', 'alert-primary')
+        var h2 = document.createElement('h2')
+        h2.innerText = item.name
+        var editBtn = document.createElement('button')
+        editBtn.classList.add('btn', 'btn-success')
+        editBtn.innerText = "Edit Name"
 
-    editBtn.addEventListener('click' , function(){
-        console.log(i)
-       editItem(i)
-    })
-    
-    div.appendChild(h2)
-    div.appendChild(editBtn)
-    container.appendChild(div)
+        editBtn.addEventListener('click', function () {
+            console.log(i)
+            editItem(i)
+        })
+
+        div.appendChild(h2)
+        div.appendChild(editBtn)
+        container.appendChild(div)
     })
 
- 
+
 
 }
 
-if(localStorage.getItem('users')) {
+if (localStorage.getItem('users')) {
     users = JSON.parse(localStorage.getItem('users'))
     console.log(users)
     drawElement()
@@ -125,15 +125,15 @@ if(localStorage.getItem('users')) {
 
 usersArray = [
     {
-        firstName : 'tamer',
-        address : 'Nasr city'
+        firstName: 'tamer',
+        address: 'Nasr city'
     },
-      {
-        firstName : 'marwa',
-        address : 'Nasr city'
-    },  {
-        firstName : 'zein',
-        address : 'Nasr city'
+    {
+        firstName: 'marwa',
+        address: 'Nasr city'
+    }, {
+        firstName: 'zein',
+        address: 'Nasr city'
     }
 ]
 
@@ -146,7 +146,7 @@ usersArray = [
 
 
 
-var id = [1,5,'dffgh']
+var id = [1, 5, 'dffgh']
 // console.log(id.toString())
 
 // console.log(JSON.stringify(usersArray))
@@ -179,19 +179,19 @@ var counter = document.getElementById('counter')
 
 var i = 0
 
-var s = setInterval(()=>{
-   i+=10
-//    console.log(i)
-   counter.innerText=i
+var s = setInterval(() => {
+    i += 10
+    //    console.log(i)
+    counter.innerText = i
 
-    if(i == 150) clearInterval(s)
-} , 500) // function , time
+    if (i == 150) clearInterval(s)
+}, 500) // function , time
 
-var s2 = setInterval(()=>{
-//    i+=10
-//    console.log(i)
-//    counter.innerText=i
-} , 500) // function , time
+var s2 = setInterval(() => {
+    //    i+=10
+    //    console.log(i)
+    //    counter.innerText=i
+}, 500) // function , time
 
 
 console.log(s)
@@ -201,3 +201,17 @@ setTimeout(() => {
     console.log('javascript')
 }, 1000);
 
+
+
+
+// setInterval
+// clearInterval
+// setTimeout
+// document.createElement
+// innerHTML
+// window.addEventListener()
+// document.documentElement.scrollTop
+// submit event ==> form (e.preventDefault())
+// console.log(inputElement.nextElementSibling)
+// console.log(inputElement.previousElementSibling)
+// console.log(inputElement.parentElement)
